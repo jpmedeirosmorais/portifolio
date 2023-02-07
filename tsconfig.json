@@ -17,11 +17,12 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
-      "src/*": ["./src/*"]
+      "@/*": [
+        "*"
+      ]
     }
   },
-  "include": ["src"],
+  "include": ["src", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "allowSyntheticDefaultImports": true
-
 }
