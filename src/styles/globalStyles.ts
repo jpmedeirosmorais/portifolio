@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
       box-sizing: border-box;
       font-family: sans-serif;
       font-size: 2rem;
+      color: ${themeToken.color[theme].secondary};
     }
   `}
 `;
