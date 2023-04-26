@@ -1,3 +1,4 @@
+import themeGlobal from "@/styles/designToken";
 import styled, { css } from "styled-components";
 import { type NavItemI } from "./interfaces";
 
@@ -21,6 +22,10 @@ export const Container = styled.div`
     .theme-container {
       position: absolute;
       right: 5rem;
+      cursor: pointer;
+      :hover {
+        opacity: 0.9;
+      }
     }
   }
 
@@ -32,12 +37,34 @@ export const Container = styled.div`
 `;
 
 export const NavItem = styled.div`
-  ${({ selected }: NavItemI) => css`
+  ${({ selected, theme }: NavItemI) => css`
     padding-inline: 1rem;
     .item {
+      position: relative;
+      display: inline-block;
       text-decoration: none;
-      font-weight: bold;
-      text-decoration: ${selected ? "underline" : "none"};
+      font-weight: normal;
+
+      ::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0rem;
+        height: 0.1rem;
+        background-color: ${themeGlobal.color[theme].secondary};
+        transition: all 500ms ease-in-out;
+      }
+
+      &:hover::after {
+        width: 3rem;
+      }
+      ${selected &&
+      css`
+        ::after {
+          width: 70%;
+        }
+      `};
     }
   `}
 `;

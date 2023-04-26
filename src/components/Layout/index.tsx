@@ -15,7 +15,11 @@ export const Layout: React.FC<LayoutI> = ({ children }) => {
       <div className="nav-bar">
         <div className="nav-items">
           {layoutOptions.map((item, key) => (
-            <NavItem key={key} selected={location.pathname === item.link}>
+            <NavItem
+              key={key}
+              selected={location.pathname === item.link}
+              theme={theme}
+            >
               <Link className="item" to={item.link}>
                 {item.title}
               </Link>
