@@ -10,26 +10,38 @@ export const Container = styled.div`
     height: 7rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-inline: 2.5rem;
+
+    .nav-brand {
+    }
 
     .nav-items {
       display: flex;
-
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       .item {
       }
     }
     .theme-container {
-      position: absolute;
-      right: 5rem;
       cursor: pointer;
+      display: flex;
+      align-items: center;
       :hover {
         opacity: 0.9;
+      }
+
+      span {
+        position: relative;
+        top: 0.1rem;
+        font-size: medium;
+        margin-right: 1rem;
       }
     }
   }
 
-  .body {
+  body {
     padding: 5rem;
     display: flex;
     justify-content: center;
@@ -52,7 +64,7 @@ export const NavItem = styled.div`
         left: 0;
         width: 0rem;
         height: 0.1rem;
-        background-color: ${themeGlobal.color[theme].secondary};
+        background-color: ${themeGlobal.color[theme].tertiary};
         transition: all 500ms ease-in-out;
       }
 

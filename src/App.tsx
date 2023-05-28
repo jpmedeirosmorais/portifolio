@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { useTheme } from "./contexts/ThemeContext";
 import { GlobalStyles } from "./styles/globalStyles";
+import { Homepage } from "./templates/Homepage";
 
-const HomePage: React.FC = () => <h1>Home Page</h1>;
 const AboutPage: React.FC = () => <h1>About Page</h1>;
 const PortifolioPage: React.FC = () => <h1>Portifolio Page</h1>;
 const ContactPage: React.FC = () => <h1>Contact Page</h1>;
@@ -17,7 +17,7 @@ const App: React.FC = () => {
       <Layout>
         <>
           <Switch>
-            <Route path="/" exact component={HomePage} />
+            <Route path="/" exact component={Homepage} />
             <Route path="/portifolio" exact component={PortifolioPage} />
             <Route path="/sobre" exact component={AboutPage} />
             <Route path="/contato" exact component={ContactPage} />

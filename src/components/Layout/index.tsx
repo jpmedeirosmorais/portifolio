@@ -13,6 +13,9 @@ export const Layout: React.FC<LayoutI> = ({ children }) => {
   return (
     <Container>
       <div className="nav-bar">
+        <div className="nav-brand">
+          <img src={`svgs/brands/brand-${theme}.svg`} />
+        </div>
         <div className="nav-items">
           {layoutOptions.map((item, key) => (
             <NavItem
@@ -27,6 +30,7 @@ export const Layout: React.FC<LayoutI> = ({ children }) => {
           ))}
         </div>
         <div onClick={toggleTheme} className="theme-container">
+          <span>{theme === "light" ? "Light" : "Dark"}</span>
           {theme === "light" ? (
             <BsFillSunFill
               color={themeGlobal.color[theme].secondary}
@@ -40,7 +44,8 @@ export const Layout: React.FC<LayoutI> = ({ children }) => {
           )}
         </div>
       </div>
-      <div className="body">{children}</div>
+      <body>{children}</body>
+      <footer></footer>
     </Container>
   );
 };
