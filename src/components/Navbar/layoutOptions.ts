@@ -1,4 +1,4 @@
-import { type LayoutOptions } from "./interfaces";
+import { type LayoutOptions } from "../Layout/interfaces";
 
 export const layoutOptions: LayoutOptions[] = [
   { title: "Home", link: "/" },

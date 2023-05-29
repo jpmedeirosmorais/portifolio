@@ -8,8 +8,3 @@ export interface LayoutOptions {
 export interface LayoutI {
   children: ReactNode;
 }
-
-export interface NavItemI {
-  selected: boolean;
-  theme: "light" | "dark";
-}

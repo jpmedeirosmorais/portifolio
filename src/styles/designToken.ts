@@ -1,21 +1,27 @@
 const dark = "#121212";
 const light = "#F4F4F4";
-// const contrast = "#87CEFA";
-const contrast2 = "#333333";
-const contrast3 = "#B0C4DE";
-// const contrast4 = "#ADD8E6";
+const color1 = "#87CEFA";
+const color2 = "#333333";
+const color3 = "#B0C4DE";
+const color4 = "#ADD8E6";
 
 const color = {
   light: {
     primary: light,
     secondary: dark,
-    tertiary: contrast3,
+    contrast: color3,
+    contrast2: color2,
+    contrast3: color1,
+    contrast4: color4,
   },
 
   dark: {
     primary: dark,
     secondary: light,
-    tertiary: contrast2,
+    contrast: color2,
+    contrast2: color1,
+    contrast3: color3,
+    contrast4: color4,
   },
 };
 

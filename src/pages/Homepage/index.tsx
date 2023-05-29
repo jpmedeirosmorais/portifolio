@@ -5,7 +5,9 @@ import { Container } from "./styles";
 export const Homepage: React.FC = () => {
   return (
     <Container>
-      <h1>João P M Morais</h1>
+      <div className="title">
+        <h1>João P M Morais - Frontend developer </h1>
+      </div>
       <Card />
     </Container>
   );
