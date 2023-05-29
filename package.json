@@ -13,6 +13,7 @@
     "test": "jest --coverage"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.2",
     "@types/babel__core": "^7.20.0",
     "@types/react-router-dom": "^5.3.3",
     "localforage": "^1.10.0",
