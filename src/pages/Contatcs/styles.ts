@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 80vh;
-  padding: 8rem;
+  justify-content: center;
+  height: 60vh;
   padding-inline: 0;
   align-items: center;
   text-align: center;
