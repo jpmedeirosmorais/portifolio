@@ -5,15 +5,14 @@ export const Container = styled.div`
 
   body {
     padding-top: 5rem;
-    padding-bottom: 5rem;
     display: flex;
     justify-content: center;
+    height: 100%;
   }
 
   @media (max-width: 500px) {
     body {
       padding-top: 2rem;
-      padding-bottom: 2rem;
     }
   }
 `;

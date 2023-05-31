@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding-inline: 5rem;
-
+  margin-bottom: 2rem;
   h1 {
     font-size: 4rem;
     font-weight: 700;
