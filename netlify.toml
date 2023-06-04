@@ -1,4 +1,10 @@
+[[plugins]]
+package = "@netlify/plugin-functions-core"
+
+[[plugins]]
+package = "netlify-plugin-redirect"
+
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200
