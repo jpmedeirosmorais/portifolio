@@ -68,29 +68,6 @@ export const RightCard = styled.div`
   h2 {
     margin-bottom: 2rem;
   }
-  p {
-    max-height: 80%;
-    font-size: 1.6rem;
-    overflow-y: scroll;
-
-    &::after {
-      content: "";
-      position: relative;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 20px;
-      background: linear-gradient(
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 1)
-      );
-    }
-  }
-
-  p::-webkit-scrollbar {
-    width: 6px;
-    display: none;
-  }
 
   @media (max-width: 70rem) {
     width: 25rem;
@@ -107,5 +84,39 @@ export const RightCard = styled.div`
 
   @media (max-width: 40rem) {
     width: 100%;
+  }
+`;
+
+export const Content = styled.div`
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  position: relative;
+  overflow: auto;
+  max-height: 80%;
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Altura do indicador */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor do indicador */
+    display: none; /* Inicialmente oculto */
+  }
+  .overlay.show {
+    display: block;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 70rem) {
+    p {
+      font-size: 1.3rem;
+      position: relative;
+    }
   }
 `;
