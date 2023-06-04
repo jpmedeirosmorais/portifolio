@@ -1,7 +1,7 @@
 import { useTheme } from "@/contexts/ThemeContext";
 import React from "react";
 import { type CardProps } from "./interfaces";
-import { CardContainer, Image, LeftCard, RightCard } from "./styles";
+import { CardContainer, Content, Image, LeftCard, RightCard } from "./styles";
 
 export const Card: React.FC<CardProps> = ({
   image,
@@ -21,7 +21,9 @@ export const Card: React.FC<CardProps> = ({
       </LeftCard>
       <RightCard>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <Content>
+          <p>{description}</p>
+        </Content>
       </RightCard>
     </CardContainer>
   );
