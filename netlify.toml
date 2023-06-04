@@ -1,8 +1,3 @@
-[[plugins]]
-package = "@netlify/plugin-functions-core"
-
-[[plugins]]
-package = "netlify-plugin-redirect"
 
 [[redirects]]
 from = "/api/*"
