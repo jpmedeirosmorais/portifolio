@@ -22,5 +22,10 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 2rem;
       color: ${themeToken.color[theme].secondary};
     }
+
+    p,
+    a {
+      font-size: 1.6rem;
+    }
   `}
 `;

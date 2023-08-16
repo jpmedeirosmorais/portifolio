@@ -27,13 +27,10 @@ export const Image = styled.img`
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   transition: all ease-in-out 250ms;
-
-  @media (min-width: 97rem) {
-    :hover {
-      transform: scale(1.05);
-      box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
-        0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
-    }
+  :hover {
+    transform: scale(1.01);
+    box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
+      0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
   }
 
   @media (max-width: 70rem) {

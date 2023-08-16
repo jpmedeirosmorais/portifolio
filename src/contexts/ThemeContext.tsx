@@ -16,8 +16,18 @@ interface ThemeContextProviderI {
   children: ReactNode;
 }
 
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const localStorageTheme = localStorage.getItem("theme");
+
+const getTheme = (): "light" | "dark" => {
+  if (localStorageTheme === "light" || localStorageTheme === "dark") {
+    return localStorageTheme;
+  }
+  return prefersDark ? "dark" : "light";
+};
+
 const DEFAULT_VALUE: ThemeContextData = {
-  theme: "light",
+  theme: getTheme(),
   toggleTheme: () => {},
 };
 
@@ -28,16 +38,13 @@ export const ThemeContextProvider: React.FC<ThemeContextProviderI> = ({
 }) => {
   const [theme, setTheme] = useState<"light" | "dark">(DEFAULT_VALUE.theme);
 
+  if (typeof theme === "undefined") {
+    return null;
+  }
+
   const toggleTheme = useCallback((): void => {
     setTheme(theme === "light" ? "dark" : "light");
   }, [theme]);
-
-  useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
-    if (localTheme === "light" || localTheme === "dark") {
-      setTheme(localTheme);
-    }
-  }, []);
 
   useEffect(() => {
     localStorage.setItem("theme", theme);

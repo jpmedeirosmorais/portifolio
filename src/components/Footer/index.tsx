@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
 
       <FooterText>
         &copy; {new Date().getFullYear()} João Paulo Medeiros de Morais |
-        Frontend Developer
+        Software Developer
       </FooterText>
     </FooterContainer>
   );

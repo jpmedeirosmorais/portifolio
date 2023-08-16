@@ -2,6 +2,7 @@ import { useTheme } from "@/contexts/ThemeContext";
 import React from "react";
 import { type CardProps } from "./interfaces";
 import { CardContainer, Content, Image, LeftCard, RightCard } from "./styles";
+import { Link } from "@/components/Link";
 
 export const Card: React.FC<CardProps> = ({
   image,
@@ -15,9 +16,7 @@ export const Card: React.FC<CardProps> = ({
     <CardContainer theme={theme}>
       <LeftCard>
         <Image src={image} />
-        <a href={url} target="_blank" rel="noreferrer">
-          Ver projeto
-        </a>
+        <Link href={url}>Ver projeto</Link>
       </LeftCard>
       <RightCard>
         <h2>{title}</h2>

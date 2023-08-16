@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
             selected={location.pathname === item.link}
             theme={theme}
           >
-            <Link className="item" to={item.link}>
+            <Link className="item" to={item.link} style={{ fontSize: "2rem" }}>
               {item.title}
             </Link>
           </NavItem>

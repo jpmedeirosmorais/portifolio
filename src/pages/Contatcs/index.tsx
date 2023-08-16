@@ -27,7 +27,7 @@ export const Contacts: React.FC = () => {
       <FooterContacts>
         <FooterText>
           &copy; {new Date().getFullYear()} João Paulo Medeiros de Morais |
-          Frontend Developer
+          Software Developer
         </FooterText>
       </FooterContacts>
     </ContactsContainer>

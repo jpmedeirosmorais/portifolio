@@ -1,8 +1,8 @@
-const dark = "#121212";
+const dark = "#111111";
 const light = "#F4F4F4";
 const color1 = "#87CEFA";
 const color2 = "#333333";
-const color3 = "#B4DAFF";
+const color3 = "#87CEFA";
 
 const color = {
   light: {
