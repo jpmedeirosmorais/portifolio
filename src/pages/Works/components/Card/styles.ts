@@ -9,15 +9,15 @@ export const CardContainer = styled.div`
     padding: 2rem;
     background-color: ${designTokens.color[theme].contrast4};
     border-radius: 1rem;
-
+    line-height: 1.2;
     box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
       0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
 
     @media (max-width: 70rem) {
       flex-direction: column;
-
+      line-height: 1.5;
       padding: 1rem;
-      padding-top: 3rem;
+      padding-bottom: 2rem;
     }
   `}
 `;
@@ -59,8 +59,7 @@ export const LeftCard = styled.div`
 
 export const RightCard = styled.div`
   width: 40rem;
-  height: 26rem;
-  text-align: justify;
+  text-align: left;
 
   h2 {
     margin-bottom: 2rem;
@@ -68,7 +67,6 @@ export const RightCard = styled.div`
 
   @media (max-width: 70rem) {
     width: 25rem;
-    height: 23rem;
     h2 {
       font-size: 1.6rem;
       margin-bottom: 1.5rem;
@@ -85,27 +83,6 @@ export const RightCard = styled.div`
 `;
 
 export const Content = styled.div`
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  position: relative;
-  overflow: auto;
-  max-height: 80%;
-
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px; /* Altura do indicador */
-    background-color: rgba(0, 0, 0, 0.5); /* Cor do indicador */
-    display: none; /* Inicialmente oculto */
-  }
-  .overlay.show {
-    display: block;
-  }
-
   p {
     font-size: 1.6rem;
   }

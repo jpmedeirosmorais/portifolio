@@ -27,7 +27,8 @@ export const Container = styled.div`
 
       p {
         color: ${themeGlobal.color[theme].secondary};
-        text-align: justify;
+        text-align: left;
+        line-height: 1.5;
       }
     }
 

@@ -22,7 +22,7 @@ export const Card: React.FC = () => {
           <br />
           Meu portfólio apresenta projetos recentes que demonstram minha
           habilidade em traduzir conceitos em interfaces interativas. Se você
-          busca um programador frontend comprometido e apaixonado por seu
+          busca um desenvolvedor de software comprometido e apaixonado por seu
           trabalho, estou ansioso para colaborar em projetos inovadores e
           contribuir para o sucesso de sua equipe. Vamos trabalhar juntos para
           criar algo incrível!
