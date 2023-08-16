@@ -30,7 +30,6 @@ export const AboutContainer = styled.div`
 export const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 3rem;
 
   .left {
@@ -42,6 +41,10 @@ export const CardsContainer = styled.div`
   img {
     width: 100%;
     border-radius: 0.5rem;
+  }
+
+  @media (max-width: 2355px) {
+    flex-direction: column;
   }
 
   @media (max-width: 800px) {
