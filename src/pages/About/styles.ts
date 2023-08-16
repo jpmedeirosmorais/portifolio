@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
+  padding: 5rem 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   h2 {
     font-size: 4rem;
     font-weight: 700;
@@ -22,6 +29,7 @@ export const AboutContainer = styled.div`
 
 export const CardsContainer = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
 
@@ -32,13 +40,13 @@ export const CardsContainer = styled.div`
     gap: 3rem;
   }
   img {
-    width: 60rem;
+    width: 100%;
     border-radius: 0.5rem;
   }
 
   @media (max-width: 800px) {
     img {
-      width: 30rem;
+      width: 100%;
     }
   }
 `;

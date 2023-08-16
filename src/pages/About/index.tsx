@@ -11,17 +11,16 @@ export const About: React.FC = () => {
       <CardsContainer>
         <div className="left">
           <img src="images/aboutimage.jpg" />
-
-          <Card>
-            <h3>Minha jornada até aqui</h3>
-            {about.map((paragraph, key) => (
-              <>
-                <p key={key}>{paragraph}</p>
-                <br />
-              </>
-            ))}
-          </Card>
         </div>
+        <Card>
+          <h3>Minha jornada até aqui</h3>
+          {about.map((paragraph, key) => (
+            <>
+              <p key={key}>{paragraph}</p>
+              <br />
+            </>
+          ))}
+        </Card>
         <Card>
           <h3>Além da programação</h3>
           {moreAbout.map((paragraph, key) => (
