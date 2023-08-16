@@ -9,13 +9,12 @@ export const CardContainer = styled.div`
     padding: 2rem;
     background-color: ${designTokens.color[theme].contrast4};
     border-radius: 1rem;
-    line-height: 1.2;
+    line-height: 1.5;
     box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
       0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
 
     @media (max-width: 70rem) {
       flex-direction: column;
-      line-height: 1.5;
       padding: 1rem;
       padding-bottom: 2rem;
     }
