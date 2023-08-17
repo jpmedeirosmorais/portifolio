@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
   return (
     <Container>
       <Link to="/" className="nav-brand">
-        <img src={`svgs/brands/brand-${theme}.svg`} />
+        <img src={`svgs/brands/brand-${theme}.svg`} alt="Logomarca JP" />
       </Link>
       <div className="nav-items">
         {layoutOptions.map((item, key) => (
