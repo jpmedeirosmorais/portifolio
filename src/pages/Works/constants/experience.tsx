@@ -8,7 +8,7 @@ export const experiences = [
   },
   {
     image: "images/works/creativecode.jpeg",
-    url: "https://www.iclubs.tech",
+    url: "https://creativecode.com.br",
     description:
       "Durante minha experiência como Desenvolvedor Frontend na Creative Code, uma empresa brasileira especializada em soluções criativas de design e desenvolvimento web, tive a oportunidade de aplicar minhas habilidades técnicas e criativas para criar interfaces visuais armoniosas e funcionais. Além disso, participei ativamente da otimização de desempenho e responsividade dos sites, garantindo uma experiência de usuário excepcional em diferentes dispositivos.",
     title: "Creative Code",

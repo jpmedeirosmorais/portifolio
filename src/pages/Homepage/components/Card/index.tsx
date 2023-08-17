@@ -15,7 +15,7 @@ export const Card: React.FC = () => {
           de desenvolvimento da{" "}
           <Link href="https://site.themembers.com.br/">The Members</Link>, onde
           trabalho em projetos desafiadores e crio experiências digitais
-          incríveis para os usuários. Com habilidades em HTML, CSS, JavaScript e
+          excelentes para os usuários. Com habilidades em HTML, CSS, JavaScript e
           frameworks como React e Next, busco constantemente soluções inovadoras
           e me atualizo em áreas relacionadas programação.
           <br />
@@ -25,7 +25,7 @@ export const Card: React.FC = () => {
           busca um desenvolvedor de software comprometido e apaixonado por seu
           trabalho, estou ansioso para colaborar em projetos inovadores e
           contribuir para o sucesso de sua equipe. Vamos trabalhar juntos para
-          criar algo incrível!
+          criar algo novo!
         </p>
       </div>
     </Container>
