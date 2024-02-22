@@ -16,7 +16,7 @@ export const Card: React.FC<CardProps> = ({
     <CardContainer theme={theme}>
       <LeftCard>
         <Image src={image} />
-        <Link href={url}>Ver projeto</Link>
+        <Link href={url}>Ver mais</Link>
       </LeftCard>
       <RightCard>
         <h2>{title}</h2>

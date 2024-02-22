@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     gap: 2rem;
     padding: 2rem;
     background-color: ${designTokens.color[theme].contrast4};
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     line-height: 1.5;
     box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
       0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ export const CardContainer = styled.div`
 
 export const Image = styled.img`
   width: 40rem;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   margin-bottom: 1rem;
   transition: all ease-in-out 250ms;
   :hover {
@@ -61,7 +61,8 @@ export const RightCard = styled.div`
   text-align: left;
 
   h2 {
-    margin-bottom: 2rem;
+    margin-top: -6px;
+    margin-bottom: 0.5rem;
   }
 
   @media (max-width: 70rem) {

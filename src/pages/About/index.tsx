@@ -9,10 +9,7 @@ export const About: React.FC = () => {
       <h2>Um pouco mais sobre mim...</h2>
 
       <CardsContainer>
-        <div className="left">
-          <img src="images/aboutimage.jpg" />
-        </div>
-        <Card>
+        <Card id="card-about-1">
           <h3>Minha jornada até aqui</h3>
           {about.map((paragraph, key) => (
             <>
@@ -21,12 +18,15 @@ export const About: React.FC = () => {
             </>
           ))}
         </Card>
-        <Card>
+        <div className="left">
+          <img src="images/aboutimage.jpg" />
+        </div>
+        <Card id="card-about-2">
           <h3>Além da programação</h3>
           {moreAbout.map((paragraph, key) => (
             <>
               <p key={key}>{paragraph}</p>
-              <br />
+              {key >= moreAbout.length - 1 ? null : <br />}
             </>
           ))}
         </Card>
