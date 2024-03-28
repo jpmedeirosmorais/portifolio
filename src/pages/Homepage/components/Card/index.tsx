@@ -7,7 +7,7 @@ export const Card: React.FC = () => {
   const { theme } = useTheme();
   return (
     <Container theme={theme}>
-      <img src="images/profile-jp.jpg" alt="João P M Morais" />
+      <img src="images/profile-jp.png" alt="João P M Morais" />
       <div className="text-card">
         <p>
           Olá, sou João Paulo, um entusiasta da programação com interesse
